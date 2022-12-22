@@ -18,7 +18,7 @@
         return M(q);
     }
 
-    operation RandomNumberInRange(max : Int) : Int {
+    operation RandomNumberInRange(max: Int) : Int {
         mutable output = 0;
 
         repeat {
