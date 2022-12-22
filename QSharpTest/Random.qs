@@ -1,4 +1,4 @@
-﻿namespace Quantum.QSharpTest {
+﻿namespace QSharpTest {
 
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
@@ -30,12 +30,5 @@
         } until (output <= max);
 
         return output;
-    }
-
-    @EntryPoint()
-    operation RandomNumber() : Int {
-        let max = 50;
-        Message($"Sampling a random number between 0 and {max}: ");
-        return RandomNumberInRange(max);
     }
 }
